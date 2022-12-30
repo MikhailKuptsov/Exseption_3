@@ -79,6 +79,12 @@ void launcher(void (*func)(double, double)) {
 	cout << "Углы прямоугольного треугольника: " << endl;
 	func(a, b);
 }
+double Square(double a, double b, double c) {
+    int p = (a + b + c) / 2;
+    int s = sqrt(p*(p - a)*(p - b)*(p - c));
+ 
+    return s;
+}
 
 int main() {
 	setlocale(LC_ALL, "rus");
